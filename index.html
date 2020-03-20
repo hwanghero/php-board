@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>커뮤니티 게시판 메인</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="wrap">
+            <header id="header" class>
+                <div class="Wrapper">
+                    
+                    <div class="logo">
+                        <h1 class="mpReset">
+                            <img src="//image.fmkorea.com/logos/fmkorealogo6.png" class="iePngFix" alt="축구 게임, 풋볼매니저 - 에펨코리아" width="363" height="59">
+                            <!-- 여기 이미지 -->
+                        </h1>
+                        <p class="mpReset about">커뮤니티 사이트 - 201606010 황영웅</p>
+                        <hr>
+                        
+                    </div>
+                    <div class="logged_info">
+                        
+                         <span class="li2">
+                              <a class="a">회원가입</a>
+                          </span>
+                           <span class="li2">
+                               <a class="a">로그인</a>
+                        </span>
+                        <form method="post" action="https://www.fmkorea.com/" class="li2 mpReset" onsubmit="return GS_LOGIN_FILTER(this)">
+                            <input class="iText" type="text" name="user_id" value="" placeholder="아이디">
+                            <input class="iText" type="password" name="password" value="" placeholder="암호">
+                            <button type="submit">로그인</button>
+                        </form>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </body>
+</html>

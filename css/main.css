@@ -1,0 +1,213 @@
+body {
+    background-color:#FFFFFF;
+    font-size: 12px;
+    font-family: Gulim, Arial, Tahoma;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 헤더 부분 */
+
+/* 맨위에 상단바 백그라운드 생성 */
+#header:before {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    left: 0;
+    top: 0;
+    content: "";
+    z-index: -1;
+}
+
+/* 헤더 부분 - 왼쪽 글씨 부분 */
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* 헤더 부분 - 엥 */
+.mpReset, .mpReset * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    background: 0 0;
+    font-style: normal;
+    font-family: Gulim,Arial,Tahoma;
+}
+
+/* 헤더 자식 - 왼쪽 글씨 중앙으로 맞추기*/
+#header .about{
+    position: absolute;
+    left: 0;
+    top: 7px;
+
+    /* --추가-- */
+    margin-left: 200px;
+}
+
+/* 헤더 자식 - 로고 (글씨크기, 폰트) */
+#header .logo {
+    color: #555;
+    font: 12px Dotum, "돋움", sana-serif;
+}
+
+/* 헤더 부분 - 오른쪽 중앙 글씨 맞추기*/
+#header .logged_info {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    text-align: right;
+    z-index: 2;
+    font-family: Dotum;
+}
+
+/* 헤더 부분 - after로 블럭생성하기 (| 이거 만드는거) */
+#header .logged_info .li2:after{
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #ccc;
+    vertical-align: middle;
+    content: "";
+}
+
+a:-webkit-any-link {
+    color: webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 0em;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -intenal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: inline-block;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(whtie, black);
+    -webkit-rtl-ordering: Logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+#header .logged_info .li2 .iText {
+    margin: -2px 0 0;
+    background: #fff;
+    width: 80px;
+    padding: 2px 5px;
+    border: 1px solid #bbb;
+}
+
+#header .logged_info form * {
+    font: 11px Dotum,"돋움",sans-serif;
+}
+
+#header .logged_info .li2:last-child:after {
+    display: none;
+}
+
+#header .logged_info .li2 {
+    display: inline;
+}
+
+#header .logged_info .li2 button, #header .logged_info .logout {
+    position: relative;
+    margin: -2px 0 0 4px;
+    padding: 3px 7px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 7px;
+    color: #555;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+button, label {
+    cursor: pointer;
+}
+
+button {
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+#header .Wrapper {
+    padding: 30px 0 45px;
+}
+
+.center .Wrapper {
+    margin: 0 auto;
+}
+
+.Wrapper {
+    width: 1250px;
+}
+
+#banner, #container, #content, #footer, #header, #sidebar .ext .sec, #sidebar2 .ext .sec, #wrap, .Wrapper {
+    display: block;
+    position: relative;
+}
+
+#banner:after, #container:after, #content:after, #footer:after, #header:after, #sidebar .ext .sec:after, #sidebar2 .ext .sec:after, #wrap:after, .Wrapper:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+#wrap {
+    z-index: 10;
+}
+
+hr {
+    display: none;
+}
+
+#header h1 {
+    padding: 1px 0 0;
+    /* --추가-- */
+    margin-left: 200px;
+}
